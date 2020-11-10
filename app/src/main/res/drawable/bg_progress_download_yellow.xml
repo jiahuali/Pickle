@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--未加载的进度区域-->
+    <item android:id="@android:id/background">
+        <clip>
+            <shape android:shape="rectangle">
+                <!--未加载的进度区域颜色-->
+                <!--                <solid android:color="#66FFFFFF" />-->
+                <solid android:color="#66FFFFFF" />
+            </shape>
+        </clip>
+    </item>
+
+    <!--已经加载完的进度的区域-->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <!--已经加载完的进度的颜色-->
+                <solid android:color="#FCA44C" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

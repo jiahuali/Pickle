@@ -1,0 +1,2 @@
+include ':app', ':pickle-compiler', ':pickle-annotation', ':pickle-lib'
+rootProject.name='Pickle'
