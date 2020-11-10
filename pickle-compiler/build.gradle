@@ -1,6 +1,7 @@
 apply plugin: 'java-library'
-apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
 
+group='com.github.jiahuali'
 /**定义工件的group、name 和 version*/
 group = 'com.carverlee.pickle'
 archivesBaseName = 'pickle-compiler'
@@ -15,19 +16,3 @@ dependencies {
 
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"
-
-//设置maven deployer
-uploadArchives {
-    repositories {
-        //配置本地maven部署
-        mavenDeployer {
-            repository(url: "file://E:/mavenLocalRepo")
-        }
-        //配置远程maven部署
-//        mavenDeployer {
-//            repository(url: "http://10.64.32.84:9999/repository/maven-releases/") {
-//                authentication(userName: "usr", password: "pwd")
-//            }
-//        }
-    }
-}
