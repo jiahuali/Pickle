@@ -24,7 +24,6 @@ public class InjectWithAutoWiredSample {
     InjectWithAutoWiredSample() {
         //inject with autoWired
         PickleApi.inject(this);
-
     }
 
     void test() {

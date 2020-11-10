@@ -18,7 +18,6 @@ public class InjectWithBridgeSample {
             testService = (TestService) injection[0];
             testDao = (TestDao) injection[1];
         }, TestService.class, TestDao.class);
-
     }
 
     void test() {
